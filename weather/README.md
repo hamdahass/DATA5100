@@ -30,7 +30,7 @@ The point of this project is to to compate Seattle's weather to Copanhagen's. I 
 ## Data
 
 - **Source:** https://www.ncei.noaa.gov/cdo-web/search?datasetid=GHCND
-- **Description:** Daily precipitation measured in Seattle and Copanhagen from January 1, 2018 to December 31, 2022. The data was retrieved from the National Centers for Environmental information [NOAA](https://www.ncei.noaa.gov/cdo-web/search?datasetid=GHCND) tool. To find the raw datasets, you can nagivate to the data folder in the github repository. The main variables for this data is **STATION_NAME:** which descripes the name of the station (city/airport name), **DATE:** the year of the record, followed by month and day, and finally the **PRCP:** which describes the precipitation (mm or inches as per preferences)
+- **Description:** Daily precipitation measured in Seattle and Copanhagen from January 1, 2018 to December 31, 2022. The data was retrieved from the National Centers for Environmental information [NOAA](https://www.ncei.noaa.gov/cdo-web/search?datasetid=GHCND) tool. To find the raw datasets, you can nagivate to the data folder in the github repository. The main variables for this data are *STATION_NAME:* which descripes the name of the station (city/airport name), *DATE:* the year of the record, followed by month and day, and finally the *PRCP:* which describes the precipitation (mm or inches as per preferences)
 - **License:** (if applicable)
 
 ---
