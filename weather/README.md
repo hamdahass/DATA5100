@@ -7,11 +7,11 @@
 ## Project Overview
 
 The point of this project is to to compate Seattle's weather to Copanhagen's. I will be using data from
-[NOAA](https://www.ncei.noaa.gov/cdo-web/search?datasetid=GHCND) to see if the two cities are similar or different. 
+[NOAA](https://www.ncei.noaa.gov/cdo-web/search?datasetid=GHCND) to see if the two cities are similar or different. By cleaning and analyzing daily precipitation data from both cities, I examined total rainfall, average precipitation, and the number of rainy days to identify similarities and differences. Findings show that Seattle receives more total precipitation than Copenhagen. I compared one station in Seattle to one station in Copenhagen, so this data is not prove that all of Seattle rains more than all of Copenhagen, just that specific station. 
 
-- **Objective:** Compare Seattle's weather with Copenhagen's to identify similarities and differences in rainfall and temperature patterns.
+- **Objective:** Compare Seattle's weather with Copenhagen's to identify similarities and differences in rainfall patterns.
 - **Domain:** Environmental.
-- **Key Techniques:** (e.g., Regression, Classification, Clustering, NLP, Time Series)
+- **Key Techniques:** (Data exploration, Data ranges, Data filtering, Time Series Analysis, Line graphs)
 
 ---
 
@@ -29,27 +29,28 @@ The point of this project is to to compate Seattle's weather to Copanhagen's. I 
 
 ## Data
 
-- **Source:** https://www.ncei.noaa.gov/cdo-web/search?datasetid=GHCND
-- **Description:** Daily precipitation measured in Seattle and Copanhagen from January 1, 2018 to December 31, 2022. The data was retrieved from the National Centers for Environmental information [NOAA](https://www.ncei.noaa.gov/cdo-web/search?datasetid=GHCND) tool. To find the raw datasets, you can nagivate to the data folder in the github repository. The main variables for this data are *STATION_NAME:* which descripes the name of the station (city/airport name), *DATE:* the year of the record, followed by month and day, and finally the *PRCP:* which describes the precipitation (mm or inches as per preferences)
+- **Source:** [Link to Data]('DATA5100/weather/data')
+- **Description:** Daily precipitation measured in Seattle and Copanhagen from January 1, 2018 to December 31, 2022. The data was retrieved from the National Centers for Environmental information [NOAA](https://www.ncei.noaa.gov/cdo-web/search?datasetid=GHCND) tool. To find the raw datasets, you can nagivate to the data folder in the github repository. The main variables for this data are *STATION_NAME:* which descripes the name of the station (city/airport name), *DATE:* the year of the record, followed by month and day, and finally the *PRCP:* which describes the precipitation (mm or inches as per preferences). The size of the Seattle dataset is (1658, 10) and Copenhagen's size is (13725, 5).
 - **License:** (if applicable)
 
 ---
 
 ## Analysis
 
-Describe the notebooks and/or scripts used to perform the analysis. Specify the order in which the code should be run to reproduce the results.
+- The analysis was performed in a single Jupyter Notebook, which contains both code cells and Markdown cells for explanations.
+- The notebook is structured so that code can be run from top to bottom to reproduce all results.
 
 ---
 
 ## Results
 
-Include a short discussion of the findings and what they imply.
+The data analysis shows that the Seattle recorded more total precipitation than the Copenhagen (393 inches vs. 302 inches). Seattle also had more rainy days (2507 vs 2285) during the period examined. This doesn't mean Seattle gets more rain than all of Copenhagen, only that the specific Seattle station measured more rainfall than the Copenhagen station we analyzed.
 
 ---
 
 ## Authors
 
-- Your Name - [Hamda Hassan](https://github.com/yourhandle)
+- Your Name - [Hamda Hassan](https://github.com/hamdahass)
 
 ---
 
@@ -61,6 +62,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgements
 
-- Tools/libraries used
-- Tutorials or papers referenced
-- Inspiration or collaborators
+- pandas, numpy, matplotlib, seaborn
+- Class readings, Lectures, w3schools
+- N/A
