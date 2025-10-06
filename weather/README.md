@@ -55,11 +55,8 @@ The point of this project is to compare Seattle's weather to Copenhagen's. I wil
 - Cleaned and combined the datasets into a single dataset containing relevant information for both cities.
 
 ### Loading the Data
-```python
+```
 import pandas as pd
-
-### Loading the Data
-```python
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -79,27 +76,27 @@ df_seattle['DATE'].agg(['min', 'max'])
 df = df_copanhagen[['DATE', 'PRCP']].merge(
     df_seattle[['DATE', 'PRCP']], on='DATE', how='outer'
 )
-
-###Data Analysis and Visualization
+```
+### Data Analysis and Visualization
 - Calculated total precipitation, mean daily precipitation, and rainy days for each city.
 - Created visualizations to compare precipitation patterns: line graphs for daily trends, bar charts for total precipitation and rainy days.
 
 ### Comparing Average Daily Precipitation
 - To compare the typical daily rainfall between Seattle and Copenhagen, I created a bar chart showing the average precipitation for each city. This visualization makes it easy to see which city generally receives more rain per day.
-
-                                                                                                        ```python
+  
+```
 sns.barplot(data=final_df, x='city', y='precipitation', hue='city', palette=['skyblue', 'lightgreen'])
 plt.xlabel("City", fontsize=18)
 plt.ylabel("Precipitation (inches)", fontsize=18)
 plt.title("Average Daily Precipitation by City", fontsize=16)
 plt.tick_params(labelsize=15)
 plt.show()
+```                                                                                              
 
 ### Comparing the Number of Rainy Days
 - To understand how often it rains in each city, I created a bar chart showing the total number of rainy days for Seattle and Copenhagen. This helps highlight the frequency of rainfall.
 
-
-```python
+```
 # Prepare the data for plotting
 rainy_df = rainy_days.reset_index()
 rainy_df.columns = ['City', 'Rainy_Days']
@@ -110,6 +107,7 @@ sns.barplot(data=rainy_df, x='City', y='Rainy_Days', palette=['lightblue','light
 plt.title("Number of Rainy Days: Seattle vs Copenhagen", fontsize=16)
 plt.ylabel("Number of Rainy Days", fontsize=14)
 plt.show()
+```
 ---
 
 ## Results
