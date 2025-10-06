@@ -1,5 +1,6 @@
-This project was built using Python. The following libraries were used for data analysis and visualization
+This project was built using Python. The following software/libraries were used for data analysis and visualization
 
+- Software: JupyterLab
 - pandas: for data loading, cleaning, manipulation, and analysis
 - numpy: for numerical operations and calculations
 - matplotlib: for creating charts and visualizations
