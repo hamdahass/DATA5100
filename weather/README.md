@@ -111,8 +111,7 @@ plt.show()
 ---
 
 ## Results
-
-The data analysis shows that Seattle recorded more total precipitation than Copenhagen (196.17 inches vs. 115.66 inches). Seattle also had more rainy days (1,018 vs. 777) during the period examined. This does not mean that all of Seattle receives more rain than all of Copenhagen—only that the specific Seattle station measured more rainfall than the Copenhagen station included in our analysis.
+- The data analysis shows that Seattle recorded more total precipitation than Copenhagen (196.17 inches vs. 115.66 inches). Seattle also had more rainy days (1,018 vs. 777) during the period examined. This does not mean that all of Seattle receives more rain than all of Copenhagen—only that the specific Seattle station measured more rainfall than the Copenhagen station included in our analysis.
 ---
 
 ## Authors
