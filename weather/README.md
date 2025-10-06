@@ -29,7 +29,7 @@ The point of this project is to compare Seattle's weather to Copenhagen's. I wil
 
 ## Data
 
-- **Source:** [Link to Data]('DATA5100/weather/data')
+- **Source:** [Link to Data](https://github.com/hamdahass/DATA5100/tree/main/weather/data)
 - **Description:** Daily precipitation measured in Seattle and Copenhagen from January 1, 2018 to December 31, 2022. The data was retrieved from the National Centers for Environmental information [NOAA](https://www.ncei.noaa.gov/cdo-web/search?datasetid=GHCND) tool. To find the raw datasets, you can navigate to the data folder in the github repository. The main variables for this data are *STATION_NAME:* which describes the name of the station (city/airport name), *DATE:* the year of the record, followed by month and day, and finally the *PRCP:* which describes the precipitation (mm or inches as per preferences). The size of the Seattle dataset is (1658, 10) and Copenhagen's size is (13725, 5).
 - **License:** (N/A)
 
