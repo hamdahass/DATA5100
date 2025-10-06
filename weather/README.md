@@ -58,44 +58,36 @@ The point of this project is to compare Seattle's weather to Copenhagen's. I wil
 ```python
 import pandas as pd
 
+### Loading the Data
+```python
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
 # Load Seattle weather data
 df_seattle = pd.read_csv('/Users/hamdahassan/DATA5100/weather/data/seattle_rain.csv')
 
 # Load Copenhagen weather data
 df_copanhagen = pd.read_csv('/Users/hamdahassan/DATA5100/weather/data/Copanhagen_rain.csv')
 
-
-### Reviewing the Datasets
-
-```python
-# View the first few rows of the Seattle dataset
+# Review the Datasets
 df_seattle.head()
-
-# Check how many unique stations are in the Seattle dataset
 df_seattle['STATION'].nunique()
-
-# Check the date range in the Seattle dataset (did the same for Copenhagen as well)
 df_seattle['DATE'].agg(['min', 'max'])
 
-### Joining the Datasets
-
-```python
-# Merge Seattle and Copenhagen datasets on the DATE column
+# Joining the Datasets: Merge Seattle and Copenhagen datasets on the DATE column
 df = df_copanhagen[['DATE', 'PRCP']].merge(
     df_seattle[['DATE', 'PRCP']], on='DATE', how='outer'
 )
 
-### Data Analysis and Visualization
+###Data Analysis and Visualization
 - Calculated total precipitation, mean daily precipitation, and rainy days for each city.
 - Created visualizations to compare precipitation patterns: line graphs for daily trends, bar charts for total precipitation and rainy days.
 
 ### Comparing Average Daily Precipitation
-To compare the typical daily rainfall between Seattle and Copenhagen, I created a bar chart showing the average precipitation for each city. This visualization makes it easy to see which city generally receives more rain per day.
+- To compare the typical daily rainfall between Seattle and Copenhagen, I created a bar chart showing the average precipitation for each city. This visualization makes it easy to see which city generally receives more rain per day.
 
-```python
-import seaborn as sns
-import matplotlib.pyplot as plt
-
+                                                                                                        ```python
 sns.barplot(data=final_df, x='city', y='precipitation', hue='city', palette=['skyblue', 'lightgreen'])
 plt.xlabel("City", fontsize=18)
 plt.ylabel("Precipitation (inches)", fontsize=18)
@@ -104,7 +96,8 @@ plt.tick_params(labelsize=15)
 plt.show()
 
 ### Comparing the Number of Rainy Days
-To understand how often it rains in each city, I created a bar chart showing the total number of rainy days for Seattle and Copenhagen. This helps highlight the frequency of rainfall.
+- To understand how often it rains in each city, I created a bar chart showing the total number of rainy days for Seattle and Copenhagen. This helps highlight the frequency of rainfall.
+
 
 ```python
 # Prepare the data for plotting
@@ -125,7 +118,7 @@ The data analysis shows that Seattle recorded more total precipitation than Cope
 ---
 
 ## Authors
-- [Hamda Hassan]('https://github.com/hamdahass')
+- [Hamda Hassan](https://github.com/hamdahass)
 
 ---
 
