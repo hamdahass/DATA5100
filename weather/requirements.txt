@@ -1,20 +1,12 @@
-# Core
-numpy
-pandas
+This project was built using Python. The following libraries were used for data analysis and visualization
 
-# Visualization
-matplotlib
-seaborn
+- pandas: for data loading, cleaning, manipulation, and analysis
+- numpy: for numerical operations and calculations
+- matplotlib: for creating charts and visualizations
+- seaborn: for enhanced statistical visualizations
 
-
-# Machine Learning
-scikit-learn
-statsmodels
-
-
-# Jupyter & Development
-jupyter
-notebook
-ipython
+Other resources used
+- https://www.w3schools.com/python/pandas/default.asp
+- https://www.markdownguide.org/cheat-sheet/
 
 
