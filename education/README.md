@@ -43,7 +43,7 @@ The data anlaysis was performed in a single Jupyter Notebook. The code was writt
 
 ## Results
 
-Include a short discussion of the findings and what they imply.
+
 
 ---
 
