@@ -202,6 +202,15 @@ print(model_lunch.summary())
 The results show that the percentage of students eligible for free or reduced lunch is the strongest predictor, explaining over 60% of the variation in ACT performance. In comparison, unemployment rate and teacher count showed much weaker relationships, explaining 19% and 3% of the variation. These findings highlight how school-level economic disadvantage is closely tied to student academic outcomes. This measure directly reflects economic disadvantage at the school level, whereas broader indicators such as unemployment rate were far less informative.
 
 
+## Improvements made to the code
+
+- Imports Cleaned: All library imports were separated onto individual lines and spacing was corrected.
+
+- Model Evaluation Consolidated: The calculation and display of model evaluation metrics (R-squared, RMSE, and MAE) for all regression models were consolidated into single, clean code cells, replacing fragmented calculations.
+
+- y_hat Explicitly Defined: The line to calculate predicted values (y_hat = model.predict()) was explicitly included before each metrics block to ensure calculations were accurate and to avoid errors.
+
+- Visualization Enhanced: Visualization code was improved with explicit titles and axis labels to clearly document the regression plots.
 
 
 ---
